@@ -1,18 +1,19 @@
 {
   "name": "serverdemo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "boxednode -s src/server.js -t server -d express -d cors -d node-notifier -n 22"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.5.2",
   "dependencies": {
+    "boxednode": "^2.4.4",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "node-notifier": "^10.0.1"
