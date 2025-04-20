@@ -7,7 +7,7 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "boxednode -s src/server.js -t server -d express -d cors -d node-notifier -n 22"
+    "build": "boxednode -s src/server.js -t server -n 22"
   },
   "keywords": [],
   "author": "",
